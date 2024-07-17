@@ -27,7 +27,29 @@
     <content_attribute id="social-audio">intense</content_attribute>
     <content_attribute id="social-contacts">intense</content_attribute>
   </content_rating>
-    <url type="homepage">
-      https://keet.io/
-    </url>
+  <url type="homepage">
+    https://keet.io/
+  </url>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/holepunchto/flathub/f2ad400661edf47a5f0e7ef12467e653c5f1395d/screenshots/1.RandomChat.png</image>
+      <caption>P2P chat on Keet</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/holepunchto/flathub/f2ad400661edf47a5f0e7ef12467e653c5f1395d/screenshots/2.Identity.png</image>
+      <caption>Keet P2P identity system</caption>
+    </screenshot>    
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/holepunchto/flathub/f2ad400661edf47a5f0e7ef12467e653c5f1395d/screenshots/3.LNWallet.png</image>
+      <caption>Keet LN integration</caption>
+    </screenshot>    
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/holepunchto/flathub/f2ad400661edf47a5f0e7ef12467e653c5f1395d/screenshots/4.CallKeet.png</image>
+      <caption>P2P call on Keet</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/holepunchto/flathub/f2ad400661edf47a5f0e7ef12467e653c5f1395d/screenshots/5.RoomType.png</image>
+      <caption>Keet room creation</caption>
+    </screenshot>
+</screenshots>
 </component>
