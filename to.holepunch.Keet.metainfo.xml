@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2024 Holepunch Inc -->
+<component type="desktop-application">
+  <id>to.holepunch.Keet</id>
+  <name>Keet</name>
+  <summary>Private and secure P2P chat</summary>
+  <metadata_license>MIT</metadata_license> 
+  <project_license>Apache-2.0</project_license> 
+  <description>
+    <p>
+      Chat directly with your friends. Send messages, files, high quality videos and photos with no limitations. Private and Encrypted. Always Peer-to-Peer. Never on a server.
+    </p>
+  </description>
+  <developer id="to.holepunch">
+    <name>Holepunch Inc</name>
+  </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#FFFFFF</color>
+    <color type="primary" scheme_preference="dark">#111921</color>
+  </branding>
+  <launchable type="desktop-id">to.holepunch.Keet.desktop</launchable>
+  <releases>
+      <release version="1.0.0" date="2024-07-17"/>
+  </releases>
+  <content_rating type="oars-1.0">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+    <url type="homepage">
+      https://keet.io/
+    </url>
+</component>
