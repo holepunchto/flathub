@@ -1,0 +1,38 @@
+id: io.keet.Keet
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: Keet
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=org.freedesktop.Notifications
+  - --persist=.config/Keet
+  - --persist=.config/pear
+modules:
+  - name: Keet
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 flatpak/${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
+      - install -Dm644 flatpak/${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 flatpak/${FLATPAK_ID}.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
+      - install -Dm755 flatpak/entrypoint.sh /app/bin/Keet
+      - mkdir -p /app/lib/${FLATPAK_ID}
+      - cp -r ./Keet-linux-arm64/* /app/lib/${FLATPAK_ID}
+    sources:
+      - type: archive
+        url: https://static.keet.io/downloads/flatpak/keet_4.15.0-rc.0_arm64_flatpak.tar.gz
+        only-arches:
+          - aarch64
+        strip-components: 0
+        sha512: 730cb051deb5a35125b87255e884f900e969e890339fa0705531a5ea83abc98121b79a763ddb8404b22d2eb473fde02b9c734d84853db4d67a405d6a2ef08912
+      - type: archive
+        url: https://static.keet.io/downloads/flatpak/keet_4.15.0-rc.0_x64_flatpak.tar.gz
+        only-arches:
+          - x86_64
+        strip-components: 0
+        sha512: dccc779e35a651cacbd31723eb114bf62d39435f2c238d61dba5c9c83fcc0a4d1723cb16b82ffa49540204e1c5d6ae75cab023bfe89c2fe98ee7eee4f5f2f2ee
