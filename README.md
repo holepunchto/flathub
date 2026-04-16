@@ -2,9 +2,9 @@
 
 Github repo for the [Keet](https://keet.io) Flatpak.
 
-![Image demo](screenshots/flatpak-demo.png)
+![Image demo](demo/flatpak-demo.png)
 
-![Check out the video demo.](screenshots/flatpak-demo.webm)
+Check out the [video demo](demo/flatpak-demo.webm).
 
 ## Install the Flatpak dependency
 
