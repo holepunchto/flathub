@@ -2,6 +2,10 @@
 
 Github repo for the [Keet](https://keet.io) Flatpak.
 
+![Image demo](screenshots/flatpak-demo.png)
+
+![Check out the video demo.](screenshots/flatpak-demo.webm)
+
 ## Install the Flatpak dependency
 
 ```sh
