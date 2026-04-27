@@ -18,14 +18,9 @@ $ flatpak install flathub org.flatpak.Builder
 
 ```sh
 $ git clone git@github.com:holepunchto/flathub.git
+$ cd flathub
 $ git checkout keet-app-submission
-
-# For production (wait for the official keet-core env to be released first https://holepunchdev.slack.com/archives/C06K6KQLT0T/p1777278527978759?thread_ts=1776672658.896109&cid=C06K6KQLT0T)
-$ flatpak run --command=flathub-build org.flatpak.Builder --disable-rofiles-fuse io.keet.Keet.yml
-
-# For internal
-$ flatpak run --command=flathub-build org.flatpak.Builder --disable-rofiles-fuse io.keet.Keet.yml
-
+$ flatpak run --command=flathub-build org.flatpak.Builder --disable-rofiles-fuse io.keet.Keet.Internal.yml
 $ flatpak install --user ./repo io.keet.Keet
 ```
 
