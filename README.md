@@ -20,7 +20,7 @@ $ flatpak install flathub org.flatpak.Builder
 $ git clone git@github.com:holepunchto/flathub.git
 $ cd flathub
 $ git checkout keet-app-submission
-$ flatpak run --command=flathub-build org.flatpak.Builder --disable-rofiles-fuse io.keet.Keet.Internal.yml
+$ flatpak run --command=flathub-build org.flatpak.Builder --disable-rofiles-fuse io.keet.Keet.yml
 $ flatpak install --user ./repo io.keet.Keet
 ```
 
